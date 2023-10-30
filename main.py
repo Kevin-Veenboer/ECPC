@@ -1,6 +1,6 @@
 import pyvisa
 import time
-import matplotlib.pyplot as plt
+
 
 rm = pyvisa.ResourceManager("@py")
 ports = rm.list_resources()
@@ -21,5 +21,6 @@ for value in range(100,1800,25):
     measurement = device.query("MEAS:CH2?")
     data.append((value,measurement))
 
-
-print(data)
+print("Volt(mV)\t|\tMeasurement")
+for val in data:
+    print(f"{data(0)}\t|\t{data(1)}")
