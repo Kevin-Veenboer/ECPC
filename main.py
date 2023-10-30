@@ -22,5 +22,6 @@ for value in range(100,1800,25):
     data.append((value,measurement))
 
 print("Volt(mV)\t|\tMeasurement")
+print(37*"-")
 for val in data:
-    print(f"{val(0)}\t|\t{val(1)}")
+    print(f"{val[0]}\t\t|\t\t{val[1]}")
