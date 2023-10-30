@@ -23,4 +23,4 @@ for value in range(100,1800,25):
 
 print("Volt(mV)\t|\tMeasurement")
 for val in data:
-    print(f"{data(0)}\t|\t{data(1)}")
+    print(f"{val(0)}\t|\t{val(1)}")
