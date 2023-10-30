@@ -16,7 +16,7 @@ out_val = 100
 burn = False
 data = list()
 
-for value in range(100,1800,25):
+for value in range(100,1200,1):
     device.query(f"OUT:CH0 {value}")
     measurement = device.query("MEAS:CH2?")
     data.append((value,measurement))
