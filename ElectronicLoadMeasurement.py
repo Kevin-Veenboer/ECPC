@@ -9,14 +9,14 @@ class ElectronicLoadMeasurement:
     def add_Measurement(self, R, U):
         assert R != 0, "Loads of zero are not allowed"
 
-        # append load and volatage to storage lists directly
+        # Append load and volatage to storage lists directly
         self.Loads.append(R)
         self.Voltages.append(U)
 
         # Calculate the current with voltage/load and store teh result
         self.Currents.append(U / R)
 
-        # calculate the power with (U**2/R) this is equal to (I**2 * R), store the result
+        # Calculate the power with (U**2/R) this is equal to (I**2 * R), store the result
         self.Powers.append(U**2 / R)
 
     # Methods to retrieve the measurements from an instance
